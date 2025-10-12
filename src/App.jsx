@@ -26,45 +26,45 @@ const SPACES = [
     name: "Speakers Theatre",
     x: 25,
     y: 20,
-    w: 145,  // Pink area on the left
+    w: 145,
     h: 220,
-    image: "/images/speakers_theatre.JPG",  // Updated filename
+    image: `${import.meta.env.BASE_URL}images/speakers_theatre.JPG`,
   },
   {
     id: "main-area",
     name: "Main Area",
-    x: 170,  // Blue central area
+    x: 170,
     y: 20,
     w: 270,
     h: 220,
-    image: "/images/main_area.JPG",  // Updated filename
+    image: `${import.meta.env.BASE_URL}images/main_area.JPG`,
   },
   {
     id: "students-testing",
     name: "Students Testing Area",
-    x: 465,  // Purple area on the right
+    x: 465,
     y: -83,
     w: 115,
     h: 210,
-    image: "/images/students_area.JPG",  // Updated filename
+    image: `${import.meta.env.BASE_URL}images/students_area.JPG`,
   },
   {
     id: "foyer",
     name: "Foyer",
-    x: 25,  // Mint green area at bottom
+    x: 25,
     y: 240,
     w: 350,
     h: 135,
-    image: "/images/foyer.JPG",  // Kept as is
+    image: `${import.meta.env.BASE_URL}images/foyer.JPG`,
   },
   {
     id: "entrance",
     name: "Entrance",
-    x: 200,  // Bottom entrance area
+    x: 200,
     y: 375,
     w: 70,
     h: 120,
-    image: "/images/entrance.JPG",  // Note: This image wasn't in your list
+    image: `${import.meta.env.BASE_URL}images/entrance.JPG`,
   }
 ];
 
@@ -124,7 +124,7 @@ function FloorMap() {
   return (
     <div className="relative w-full rounded-2xl shadow-md overflow-hidden">
       <img 
-        src="/images/Graphic-Floorplan.jpg" 
+        src={`${import.meta.env.BASE_URL}images/Graphic-Floorplan.jpg`} 
         alt="Floor Plan"
         className="w-full h-auto"
       />

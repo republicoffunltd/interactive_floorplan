@@ -27,5 +27,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://republicoffunltd.github.io/interactive_floorplan/"
+  "homepage": "https://republicoffunltd.github.io/interactive_floorplan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/republicoffunltd/interactive_floorplan.git"
+  }
 }
